@@ -27,8 +27,10 @@ class LoginForm extends React.Component {
     event.preventDefault()
     //let formData = { firstName: this.state.firstName, lastName: this.state.lastName }
    // this.sendFormDataSomewhere(formData)
+   console.log(this.state.username)
+   console.log(this.state.password)
    if (this.state.username && this.state.password){
-    this.props.handleLogin()
+    this.props.handleLogin(this.state.username, this.state.passowrd)
    }
   }
  
